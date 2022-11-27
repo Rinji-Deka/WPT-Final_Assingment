@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+    <link href="new1.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <center>
+    <script src="script.js"></script>
+    <div class="main-box" >
+<section class="box-one">
+    <div class="box-one-top">
+        <div id='box-one-text'>
+            <span style='font-size:19px;'>CASIO</span>
+            <span>fx-825678 </span>
+            
+        </div>
+        <center style="margin-top: 4px;">
+            <code>S-V.P.A.M</code>
+        </center>
+        <div id="box-one-middle">
+            <input type="text" id='result'>
+        </div>
+        <span id='box-one-bottom'>
+            <button onclick="cuberut()">3<sub>√</sub></button>
+            <button onclick="fourrut()">4<sub>√</sub></button>
+            <button onclick="fiverut()">5<sub>√</sub></button>
+            <button onclick="sqrt()">√</button>
+        </span>
+    </div>
+<div  class="box-two">
+
+
+
+<span>
+    <small class="lbl">x<sup>2</sup></small>
+    <small class="lbl">x<sup>3</sup></small>
+    <small class="lbl">x<sup>4</sup></small>
+    <small class="lbl">x<sup>5</sup></small>
+    <small class="lbl">x<sup>6</sup></small>
+    <small class="lbl">x<sup>7</sup></small>
+    
+</span>
+<span>
+    <button onclick="x2()">x<sup>2</sup></button>
+    <button  onclick="x3()">x<sup>3</sup></button>
+    <button  onclick="x4()">x<sup>4</sup></button>
+    <button  onclick="x5()">x<sup>5</sup></button> 
+    <button  onclick="x6()">x<sup>6</sup></button>
+    <button  onclick="x7()">x<sup>7</sup></button>
+    
+</span>
+<span>
+    <small class="lbl">x<sup>9</sup></small>
+    <small class="lbl">log</small>
+    <small class="lbl">In</small>
+    <small class="lbl">e</small>
+    <small class="lbl">cot</small>
+    <small class="lbl">coth</small>
+</span>
+<span>
+    <button  onclick="x9()">x<sup>9</sup></button>  
+    <button  onclick="log()">log</button>
+    <button  onclick="In()">In</button>
+    <button>e</button>
+    <button onclick="cot()">cot</button>
+    <button  onclick="coth()">coth</button>
+</span>
+<span>
+    <small class="lbl">asinh</small>
+    <small class="lbl">asin</small>
+    <small class="lbl">sinh</small>
+    <small class="lbl">sin</small>
+    <small class="lbl">cos</small>
+    <small class="lbl">cosh</small>
+</span>
+<span>
+    <button onclick="asinh()">asinh</button>
+    <button onclick="asin()">asin</button>
+    <button onclick="sinh()">sinh</button>
+    <button onclick="sin()">sin</button>
+    <button onclick="cos()">cos</button>
+    <button onclick="cosh()">cosh</button>
+</span>
+<span>
+    <small class="lbl">acos</small>
+    <small class="lbl">cosh</small>
+    <small class="lbl">tan</small>
+    <small class="lbl">tanh</small>
+    <small class="lbl">atan</small>
+    <small class="lbl">atanh</small>
+</span>
+<span>
+    <button onclick="acos()">acos</button>
+    <button onclick="acosh()">acosh</button>
+    <button onclick="tan()">tan</button>
+    <button onclick="tanh()">tanh</button>
+    <button onclick="atan()">atan</button>
+    <button onclick="atanh()">atanh</button>
+</span>
+</div>
+<div class="box-three">
+    <span>
+        <small class="lbl">M</small>
+        <small class="lbl">G</small>
+        <small class="lbl">T</small>
+        <small class="lbl">INS</small>
+        <small class="lbl">OFF</small>
+        
+    </span>
+    <span>
+        <button onclick="dis('7')">7</button>
+        <button onclick="dis('8')">8</button>
+        <button onclick="dis('9')">9</button>
+        <button onclick="del()">DEL</button>
+        <button onclick="aclear()">AC</button>
+    </span>
+    <span>
+        <small class="lbl">MAT</small>
+        <small class="lbl">VCT</small>
+        <small class="lbl">K</small>
+        <small class="lbl">nPr</small>
+        <small class="lbl">nCr</small>
+    </span>
+    <span>
+        <button onclick="dis('4')">4</button>
+        <button onclick="dis('5')">5</button>
+        <button onclick="dis('6')">6</button>
+        <button onclick="dis('*')">x</button>
+        <button onclick="dis('/')">/</button>
+    </span>
+    <span>
+        <small class="lbl">S-SUM</small>
+        <small class="lbl">S-VAR</small>
+        <small class="lbl">DISTR</small>
+        <small class="lbl">e=0</small>
+        <small class="lbl">a+bi</small>
+    </span>
+    <span>
+        <button onclick="dis('1')">1</button>
+        <button onclick="dis('2')">2</button>
+        <button onclick="dis('3')">3</button>
+        <button onclick="dis('+')">+</button>
+        <button onclick="dis('-')">-</button>
+    </span>
+    <span>
+        <small class="lbl">RND</small>
+        <small class="lbl">RAN#</small>
+        <small class="lbl">!@</small>
+        <small class="lbl">ORG</small>
+        <small class="lbl">Re-IM</small>
+    </span>
+    <span>
+        <button onclick="dis('0')">0</button>
+        <button onclick="dis('.')">.</button>
+        <button>EXP</button>
+        <button onclick="dis('ANS')">ANS</button>
+        <button onclick="slove()">=</button>
+    </span>
+</div>
+
+</section>
+    </div></center>
+</body>
+</html>
